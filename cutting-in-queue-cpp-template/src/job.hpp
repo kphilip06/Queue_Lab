@@ -1,0 +1,31 @@
+#include <iostream>
+#pragma once
+
+class Job
+{
+private:
+  std::string name;
+  int priority;
+
+public:
+  Job(std::string n, int p) : name(n), priority(p) {}
+
+  void execute()
+  {
+    std::cout << "Running the job with name "
+              << name
+              << " and priority "
+              << priority
+              <<std::endl;
+  }
+
+  std::string getName()
+  {
+    return name;
+  }
+
+  int getPriority()
+  {
+    return priority;
+  }
+};
